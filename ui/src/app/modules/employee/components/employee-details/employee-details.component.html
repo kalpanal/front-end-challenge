@@ -1,0 +1,16 @@
+<div class="form-horizontal" *ngIf="employeeDetail | async as employee">
+    <h3>Enrolee Detail</h3>
+
+    <br>
+    <label class="col-xs-4 control-label">UserID: </label>
+    <p class="form-control-static">{{ employee.userId }}</p>
+
+    <label class="col-xs-4 control-label">NAME:</label>
+    <p class="form-control-static">{{ employee.name }}</p>
+
+    <label class="col-xs-4 control-label">Activation Status:</label>
+    <p class="form-control-static">{{ employee.activationstatus }}</p>
+
+    <label class="col-xs-4 control-label">Birthdate:</label>
+    <p class="form-control-static">{{ employee.birthdate }}</p>
+</div>

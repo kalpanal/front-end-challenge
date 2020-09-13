@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\modules",
+    "\\src\\app\\modules\\employee",
+    "\\src\\app\\modules\\employee\\components",
+    "\\src\\app\\modules\\employee\\components\\employee-details",
+    "\\src\\app\\modules\\employee\\components\\employee-list",
+    "\\src\\app\\modules\\employee\\interfaces",
+    "\\src\\app\\modules\\employee\\pages",
+    "\\src\\app\\modules\\employee\\pages\\employees-page"
+  ],
+  "SelectedNode": "\\src\\app\\app.component.html",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,68 @@
+[
+    {
+        "id": 100,
+        "name": "Jaroslaw",
+        "salary": 20000,
+        "nationality": "Polish"
+    },
+    {
+        "id": 101,
+        "name": "Joao",
+        "salary": 30000,
+        "nationality": "Portuguese"
+    },
+    {
+        "id": 102,
+        "name": "Vanessa",
+        "salary": 40000,
+        "nationality": "Spanish"
+    },
+    {
+        "id": 103,
+        "name": "Riccardo",
+        "salary": 50000,
+        "nationality": "Italian"
+    },
+    {
+        "id": 104,
+        "name": "Vitalie",
+        "salary": 60000,
+        "nationality": "French"
+    },
+    {
+        "id": 105,
+        "name": "Kurt",
+        "salary": 25000,
+        "nationality": "Austrian"
+    },
+    {
+        "id": 106,
+        "name": "Leonardo",
+        "salary": 35000,
+        "nationality": "Italian"
+    },
+    {
+        "id": 107,
+        "name": "Pablo",
+        "salary": 45000,
+        "nationality": "Spanish"
+    },
+    {
+        "id": 108,
+        "name": "Johanna",
+        "salary": 15000,
+        "nationality": "English"
+    },
+    {
+        "id": 109,
+        "name": "Ludmilla",
+        "salary": 55000,
+        "nationality": "Bulgarian"
+    },
+    {
+        "id": 110,
+        "name": "Karin",
+        "salary": 70000,
+        "nationality": "German"
+    }
+]

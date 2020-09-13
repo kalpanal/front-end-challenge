@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\modules",
+    "\\app\\modules\\employee",
+    "\\app\\modules\\employee\\components",
+    "\\app\\modules\\employee\\components\\employee-list",
+    "\\app\\modules\\employee\\interfaces",
+    "\\app\\modules\\employee\\services",
+    "\\app\\modules\\employee\\services\\employee",
+    "\\assets",
+    "\\assets\\data"
+  ],
+  "SelectedNode": "\\app\\modules\\employee\\services\\employee\\employee.service.ts",
+  "PreviewInSolutionExplorer": false
+}
