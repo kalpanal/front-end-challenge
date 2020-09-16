@@ -1,1 +1,256 @@
+@import '../../../../../assets/common-mixins/mixins';
 
+    #FormWrapper {
+        margin-bottom: #{$f1 + 10};
+        background-color: $white-color;
+        padding: 20px 0 30px 25px;
+
+        .titlediv {
+            margin-bottom: 30px;
+
+            .main-title {
+                text-transform: capitalize;
+                color: $grey-color;
+                margin-bottom: #{$f1 - 15};
+                font: 800 33px $global-font-dark-black;
+            }
+
+            .title-description {
+                p {
+                    font: 300 #{$f1 - 2}/140% $global-basic-font;
+                    color: $grey-color;
+                    margin: 0;
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    #FormbodyWrapper {
+        .form-group {
+            margin: 0 0 #{$f1 - 5};
+
+            label {
+                font: 400 #{$f1 - 2} $global-basic-font;
+            }
+
+            select {
+                width: 75%;
+                background-color: $input-bg-color;
+            }
+
+            .form-control {
+                width: 75%;
+                background-color: $input-bg-color;
+                color: $black-color;
+                border-color: $input-bg-color;
+
+                &:focus {
+                    border-color: $input-bg-color;
+                }
+            }
+
+            .form-check-inline {
+                margin-bottom: #{$f1 - 5};
+
+                label {
+                    padding: 0;
+                    position: relative;
+                    font-size: #{$f1 - 5};
+                    cursor: pointer;
+
+                    &:before {
+                        content: '';
+                        border: 2px solid $gray-solid-border-color;
+                        background: $gray-light-bg-color;
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        vertical-align: middle;
+                    }
+
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                        position: absolute;
+                        width: 7px;
+                        height: 7px;
+                        background: $blue-bg-color;
+                        left: 8px;
+                        top: 8px;
+                        border-radius: 50%;
+                        transition: 300ms ease-in-out 0s;
+                        transform: translate(-56%, -5%) scale(0);
+                    }
+                }
+
+                input[type="radio"] {
+                    display: none;
+
+                    &:checked {
+                        + label {
+                            &:before {
+                                border: 2px solid $blue-bg-color;
+                                background: $white-color;
+                                color: $black-color;
+                            }
+
+                            &:after {
+                                transform: translate(-56%, 13%) scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .help-block {
+                margin-top: 4px;
+            }
+        }
+    }
+
+    #SubmitWrapper {
+        @include submitwrapper;
+    }
+
+    .alert-success, .alert-danger {
+        width: 100%;
+    }
+
+
+#CreateApplicationBlueprintWrapper {
+    #FormWrapper {
+        margin-bottom: 30px;
+        background-color: $white-color;
+        padding: 20px 0 30px 25px;
+
+        .titlediv {
+            margin-bottom: 30px;
+
+            .main-title {
+                text-transform: capitalize;
+                color: $grey-color;
+                margin-bottom: 5px;
+                font: 800 33px $global-font-dark-black;
+            }
+
+            .title-description {
+                p {
+                    font: 300 #{$f1 - 2}/140% $global-basic-font;
+                    color: $grey-color;
+                    margin: 0;
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    #FormbodyWrapper {
+        .form-group {
+            margin: 0 0 #{$f1 - 5};
+
+            label {
+                font: 400 #{$f1 - 2} $global-basic-font;
+            }
+
+            select {
+                width: 75%;
+                background-color: $input-bg-color;
+            }
+
+            .form-control {
+                width: 75%;
+                background-color: $input-bg-color;
+                color: $black-color;
+                border-color: $input-bg-color;
+
+                &:focus {
+                    border-color: $input-bg-color;
+                }
+            }
+
+            .form-check-inline {
+                margin-bottom: 15px;
+
+                label {
+                    padding: 0;
+                    position: relative;
+                    font-size: #{$f1 - 5};
+                    cursor: pointer;
+
+                    &:before {
+                        content: '';
+                        border: 2px solid $gray-solid-border-color;
+                        background: $gray-light-bg-color;
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        vertical-align: middle;
+                    }
+
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                        position: absolute;
+                        width: 7px;
+                        height: 7px;
+                        background: $blue-bg-color;
+                        left: 8px;
+                        top: 8px;
+                        border-radius: 50%;
+                        transition: 300ms ease-in-out 0s;
+                        transform: translate(-56%, -5%) scale(0);
+                    }
+                }
+
+                input[type="radio"] {
+                    display: none;
+
+                    &:checked {
+                        + label {
+                            &:before {
+                                border: 2px solid $blue-bg-color;
+                                background: $white-color;
+                                color: $black-color;
+                            }
+
+                            &:after {
+                                transform: translate(-56%, 13%) scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .help-block {
+                margin-top: 4px;
+            }
+        }
+    }
+
+    #SubmitWrapper {
+        @include submitwrapper;
+    }
+
+    #CreateApplicationBlueprint-create-download-btn {
+        @include submitwrapper;
+    }
+
+    #CreateApplicationBlueprint-upload-btn {
+        @include submitwrapper;
+    }
+
+    #CreateApplicationBlueprint-upload-btn {
+        @include submitwrapper;
+    }
+
+    #CreateApplicationBlueprint-back-btn {
+        @include submitwrapper;
+    }
+
+    .alert-success, .alert-danger {
+        width: 100%;
+    }
+}

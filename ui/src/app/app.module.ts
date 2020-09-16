@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeModule } from './modules/employee/employee.module';
+import { Common } from './Common';
 
 @NgModule({
     declarations: [
@@ -12,10 +13,12 @@ import { EmployeeModule } from './modules/employee/employee.module';
     ],
     imports: [
         BrowserModule,
-        // HttpClientModule,
-        // FormsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
         AppRoutingModule,
         EmployeeModule
+    ], providers: [
+        Common
     ],
     bootstrap: [AppComponent]
 })

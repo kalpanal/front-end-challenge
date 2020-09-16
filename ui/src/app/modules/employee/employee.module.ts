@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeeRoutingModule } from './employee-routing.module';
 import { EmployeesPageComponent } from './pages/employees-page';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import {
     EmployeeListComponent,
     EmployeeDetailsComponent
@@ -17,7 +19,9 @@ import {
     imports: [
         CommonModule,
         HttpClientModule,
-        EmployeeRoutingModule
+        EmployeeRoutingModule,
+        FormsModule,
+        ReactiveFormsModule
     ]
 })
 export class EmployeeModule { }

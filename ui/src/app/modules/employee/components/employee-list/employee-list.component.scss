@@ -1,3 +1,19 @@
+
 .tableRow {
     cursor: pointer;
+    .edit-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+
+        img {
+            margin: 0;
+            padding-top: 5px;
+            width: 16px;
+        }
+    }
 }
+
+

@@ -1,0 +1,346 @@
+//text  color variables
+$red-color: #ff0000;
+$white-color: #ffffff;
+$light-white-text-color: #f1f1f1;
+$black-color: #000000;
+$grey-color: #414852;
+$tooltip-text-grey-color: #282828;
+$error-text-color: #dc3545;
+$success-text-color: #28a745;
+$info-text-color: #17a2b8;
+$blue-text-color: #2a6fff;
+$input-bg-color: #e5e8ef;
+$sub-menu-bg-color: #4a525e;
+
+// background color variables
+$highbg: #c00000;
+$mediumbg: #d39305;
+$lowbg: #81bd8b;
+$infobg: #5b9bd5;
+$totalbg: #757575;
+$blue-bg-color: #006bff;
+$radio-btn-bg-color: #2a6fff;
+$cloud-art-bg-color: #e1e8f2;
+$icon-bg-color:  #d8f16e;
+$disable-bg-color: #bfc3c7;
+$gray-light-bg-color: #a5a5a5;
+$table-bg-color: #cccccc;
+
+// border color variables
+$gray-border-color: #6f747d;
+$gray-solid-border-color: #646464; 
+
+// button-bg-color variables
+
+// hover  color variables
+$blue-hove-color: #448DF3;
+
+// horizontal line color variables
+$hr-light-dark-color: #8f96a0;
+
+// font styles
+$global-font: 'Segoe UI', sans-serif;
+$global-font-dark-black: "Segoe UI Black";
+$global-basic-font: "Segoe UI";
+$global-emoji-font: "Segoe UI Emoji";
+$anchor-font: 'Arial';
+
+// *** pixel values *** //
+$f1: 18px;
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+
+
+// *** media query standards *** //
+$mobile-portrait		: "(max-width: 767.9px)";
+$mobile-landscape : "(min-width: 480px) and (max-width:768px)";
+$tablet-portrait : "(min-width:768px) and (max-width:991.9px)";
+$tablet-landscape : "(min-width:992px) and (max-width:1024px)";
+
+
+
+// Mixins
+@mixin inline-middle {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@mixin login-fgt-btn {
+  outline: 0;
+  background: $blue-bg-color;
+  width: 100%;
+  border: 0;
+  padding: #{$f1 - 5};
+  color: $white-color;
+  font: 500 15px $global-basic-font;
+  transition: 300ms ease-in-out 0s;
+  border-radius: 5px;
+  margin: 5px 0px;
+  cursor: pointer;
+  z-index: 1;
+  &:hover, &:active, &:focus {
+  background: $blue-hove-color;
+  transition: 300ms ease-in-out 0s;
+  color: #f1f1f1;
+    }
+}
+
+@mixin login-bg-image {
+  background: #313943 url('src/assets/images/loginpage-bg.png') no-repeat top center;
+  height: 100%;
+  background-size: contain;
+  z-index: 0;
+  margin-top: -16px;
+}
+
+@mixin dashboard-btn {
+  background: $blue-bg-color;
+  border-radius: 0;
+  color: $white-color;
+  border: 1px solid $blue-bg-color;
+  transition: 0.5s ease-in;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 22px;
+  cursor: pointer;
+  &:hover {
+    transition: 0.5s ease-in;
+    color: $black-color;
+    background: transparent;
+  }
+}
+
+@mixin user-plat-add-btn {
+  border-radius: 5px;
+  border: 1px solid $blue-bg-color;
+  transition: 0.5s ease-in;
+  font-size: 20px;
+  width: 200px;
+  margin: 20px 0 0;
+  background: $blue-bg-color;
+  color: $white-color;
+  padding: 5px 0;
+  cursor: pointer;
+  margin-left: 10px;
+
+  &:hover {
+  background: transparent;
+  color: $black-color;
+  transition: 0.5s ease-out;
+  border: 1px solid $blue-bg-color;
+  }
+
+  &.cancel-btn {
+  border: 1px solid $grey-color;
+  background: $grey-color;
+  margin-right: 0px;
+
+  &:hover {
+      border: 1px solid $grey-color;
+      background: transparent;
+      transition: 0.5s ease-out;
+      color: $black-color;
+  }
+  }
+}
+
+@mixin disable-btn-plat-edit {
+  border-radius: 5px;
+  border: 1px solid $disable-bg-color;
+  transition: unset;
+  font-size: 20px;
+  width: 240px;
+  margin: 20px 0 0;
+  background: $disable-bg-color;
+  color: $white-color;
+  padding: 5px 0;
+  margin-left: 10px;
+  cursor: not-allowed;
+  &:hover {
+  background: $disable-bg-color;
+  color: $white-color;
+  transition: unset;
+  border: 1px solid $disable-bg-color;
+}
+}
+
+@mixin login-signup-fgt-default {
+  background-color: rgba(49, 57, 67, 0.9);
+  color: $white-color;
+  font-weight: bold;
+  border-radius: 23px;
+  border: 1px solid rgba(179, 179, 179, 0.2);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 32%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 20px 20px;
+  text-align: center;
+  font-family: $global-basic-font;
+  transition: 500ms ease all;
+  box-shadow: 20px 30px 20px 20px rgba(0,0,0,0.25), 20px 30px 20px 20px rgba(0,0,0,0.22);
+}
+
+@mixin blue-submit-button {
+  border-radius: 5px;
+  border: 1px solid $blue-bg-color;
+  transition: 0.5s ease-in;
+  font-size: 20px;
+  width: 200px;
+  margin: 0 auto;
+  background: $blue-bg-color;
+  color: $white-color;
+  padding: 5px 0;
+  cursor: pointer;
+  margin-left: 10px;
+  &:hover {
+    background: transparent;
+    color: $black-color;
+    transition: 0.5s ease-out;
+    border: 1px solid $blue-bg-color;
+  }
+}
+
+@mixin select-dropdown {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  color: $black-color;
+  font-size: 16px;
+  padding: 0 15px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: rgba(255, 255, 255, 1) url('src/assets/images/down-arrow.png') no-repeat;
+  background-position: 97% 50%;
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+  &::-ms-expand {
+  display: none;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin centre-positioning {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin confirm-dialog-box-wrapper {
+    position: relative;
+    .modal-container-wrapper {
+      position: fixed;
+      width: 40%;
+      top: 30%;
+      background-color: $white-color;
+      left: 380px;
+      z-index: 9999;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .standard-title {
+    h3 {
+    color: $black-color;
+    margin: 0;
+    }
+    }
+    p {
+    color: $black-color;
+    margin: 0;
+    }
+    hr {
+    width: 100%;
+    margin: 15px 0;
+    }
+    .confirm-buttons {
+      .btn {
+        border: none;
+        color: $white-color;
+        margin-right: 7px;
+        border-radius: 5px;
+        width: unset;
+        &:hover, &:focus, &:active {
+          background: transparent !important;
+          background-image: unset !important;
+          box-shadow: none;
+          transform: unset;
+          border: none;
+          color: $black-color;
+          transition: 300ms ease-in-out 0s;
+        }
+    
+        &.yes-btn {
+          background: #81BD8B;
+          border: 1px solid #81BD8B;
+        }
+    
+        &.no-btn {
+          background: $grey-color;
+          border: 1px solid $grey-color;
+        }
+      }
+  
+        .disable-yes-btn {
+          border: none;
+          color: $sub-menu-bg-color;
+          padding : 10px 40px;
+          margin-right: 7px;
+          border-radius: 5px;
+          &:hover, &:focus, &:active {	
+            background: $disable-bg-color;
+            background-image: unset !important;
+            box-shadow: none;	
+            transform: unset;
+            border: none;
+            color: $sub-menu-bg-color;
+            transition: 300ms ease-in-out 0s;
+          }
+            &.yes-btn {
+              background: $disable-bg-color;
+              border: 1px solid #e0e0e0;
+            }
+        }
+    }
+    .deleted-app-name {
+      width: 440px;
+      display: block;
+    }
+    .session-invalidated-text {
+      width: 416px;
+      display: block;
+    }
+}
+
+// *** submit wrapper styles *** //
+@mixin submitwrapper {
+  width: 40%;
+    margin: 0 auto;
+    .createbtn {
+      @include user-plat-add-btn;
+    }
+}
+
+@mixin navigation-arrow {
+  position: absolute;
+  top:50%;
+  padding: 0px 10px;
+  font-weight: bold;
+  color: $white-color;
+}
+
+@mixin navigation-style {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  background: $black-color;
+}

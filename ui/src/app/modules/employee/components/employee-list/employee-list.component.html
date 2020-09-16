@@ -10,6 +10,7 @@
                 <th>Name</th>
                 <th>Activation Status</th>
                 <th>Birth Date</th>
+                <th></th>
             </tr>
         </thead>
 
@@ -17,12 +18,17 @@
             <tr
                 *ngFor='let employee of empListData'
                 class="tableRow"
-                (click)="showEmployeeDetails(employee.userId)"
             >
                 <td>{{ employee.userId }}</td>
                 <td>{{ employee.name }}</td>
                 <td>{{ employee.activationstatus }}</td>
                 <td>{{ employee.birthdate }}</td>
+                <td>
+                    <div class="edit-icon">
+                        <img src="../../../../assets/images/edit-icon.png" aria-hidden="true" data-toggle="tooltip"
+                             title="edit" (click)="showEmployeeDetails(employee)" alt="Edit Icon">
+                    </div>
+                </td>
             </tr>
         </tbody>
     </table>

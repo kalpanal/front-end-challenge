@@ -1,16 +1,59 @@
-<div class="form-horizontal" *ngIf="employeeDetail | async as employee">
+<div *ngIf="employeeDetail | async as employee">
     <h3>Enrolee Detail</h3>
+    <div id="FormWrapper">
+        <div id="FormbodyWrapper">
+            <!-- Form Starts here -->
+            <form [formGroup]="CreateForm" (ngSubmit)="onClickSubmit(CreateForm.value)">
+                <div class="form-group row">
+                    <label class="col-md-4 col-form-label">
+                        UserId
+                    </label>
+                    <div class="form-group row col-md-6">
+                        <input type="text" class="form-control" [attr.disabled]="true" formControlName="userId">{{employee.userId}}
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-4 col-form-label">
+                        Name
+                    </label>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" formControlName="name"
+                               value={{employee.name}}/>
+                        <div *ngIf="(!CreateForm.controls.name.pristine && !CreateForm.controls.name.valid) ||
+                      (isSubmitted && !CreateForm.controls.name.valid)
+                      " class="help-block">
+                            {{this.commonService.applicationNameRequired}}
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-4 col-form-label">
+                        Activation Status
+                    </label>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" formControlName="activationstatus"
+                               value={{employee.activationstatus}}/>
+                        <div *ngIf="(!CreateForm.controls.activationstatus.pristine && !CreateForm.controls.activationstatus.valid) ||
+                      (isSubmitted && !CreateForm.controls.activationstatus.valid)
+                      " class="help-block">
+                            {{this.commonService.applicationNameRequired}}
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-4 col-form-label">
+                        Birth Date
+                    </label>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" [attr.disabled]="true" formControlName="birthdate"
+                               value={{employee.birthdate}}/>                       
+                    </div>
+                </div>
+                <br />
 
-    <br>
-    <label class="col-xs-4 control-label">UserID: </label>
-    <p class="form-control-static">{{ employee.userId }}</p>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+        </div>
 
-    <label class="col-xs-4 control-label">NAME:</label>
-    <p class="form-control-static">{{ employee.name }}</p>
-
-    <label class="col-xs-4 control-label">Activation Status:</label>
-    <p class="form-control-static">{{ employee.activationstatus }}</p>
-
-    <label class="col-xs-4 control-label">Birthdate:</label>
-    <p class="form-control-static">{{ employee.birthdate }}</p>
-</div>
+    </div>
