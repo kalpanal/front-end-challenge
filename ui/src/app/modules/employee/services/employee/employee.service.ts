@@ -30,7 +30,7 @@ export class EmployeeService {
 
     public saveEmployeeDetails(enroleeData) {
         console.log('enroleeData' + this.apiURL + 'updateByUserId' + JSON.stringify(enroleeData));
-        return this.http.post(this.apiURL + 'updateByUserId', JSON.stringify(enroleeData));
+        this.http.post(this.apiURL + 'updateByUserId', enroleeData).subscribe(response => { console.log(response); }) ;
     }
 
 }

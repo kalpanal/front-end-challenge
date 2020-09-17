@@ -1,0 +1,48 @@
+2020-09-17 12:24:12,212 [main] INFO  com.nttdata.challenge.Application - Starting Application on INCHNDL79DDKVT2 with PID 12536 (C:\Project\FullStack-Project\api\target\classes started by 205741 in C:\Project\FullStack-Project\api)
+2020-09-17 12:24:12,216 [main] INFO  com.nttdata.challenge.Application - No active profile set, falling back to default profiles: default
+2020-09-17 12:24:13,196 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-09-17 12:24:13,264 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61ms. Found 1 repository interfaces.
+2020-09-17 12:24:14,532 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-09-17 12:24:14,548 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-09-17 12:24:14,561 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-17 12:24:14,561 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-09-17 12:24:14,572 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Zulu\zulu-8\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Zulu/zulu-8/bin/../jre/bin/server;C:/Program Files/Zulu/zulu-8/bin/../jre/bin;C:/Program Files/Zulu/zulu-8/bin/../jre/lib/amd64;C:\Program Files (x86)\Python37-32\Scripts\;C:\Program Files (x86)\Python37-32\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Webex\Plugins;C:\Program Files\Zulu\zulu-8\bin;C:\Program Files\nodejs\;C:\Program Files\Zulu\zulu-8\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\graalvm-ee-java8-19.3.2\bin;C:\Program Files\Microsoft Windows Performance Toolkit\;C:\ProgramData\chocolatey\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Program Files\OpenSSL-Win64\bin;C:\Users\205741\AppData\Local\Microsoft\WindowsApps;C:\Users\205741\AppData\Local\JetBrains\IntelliJ IDEA 2019.3.3\bin;;C:\Users\205741\AppData\Roaming\npm;C:\Program Files\OpenSSL-Win64\bin;C:\Users\205741\AppData\Local\GitHubDesktop\bin;C:\eclipse;;.]
+2020-09-17 12:24:14,702 [main] INFO  o.a.c.c.C.[.[localhost].[/challenge] - Initializing Spring embedded WebApplicationContext
+2020-09-17 12:24:14,702 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2395 ms
+2020-09-17 12:24:15,756 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-09-17 12:24:15,757 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+2020-09-17 12:24:15,838 [cluster-ClusterId{value='5f63081729af5930f8fc0eb3', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:60}] to localhost:27017
+2020-09-17 12:24:15,843 [cluster-ClusterId{value='5f63081729af5930f8fc0eb3', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2741300}
+2020-09-17 12:24:15,845 [cluster-ClusterId{value='5f63081729af5930f8fc0eb3', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-09-17 12:24:16,046 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:61}] to localhost:27017
+2020-09-17 12:24:16,392 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-17 12:24:16,649 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-09-17 12:24:16,666 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-09-17 12:24:16,690 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/challenge'
+2020-09-17 12:24:16,693 [main] INFO  com.nttdata.challenge.Application - Started Application in 4.933 seconds (JVM running for 5.849)
+2020-09-17 12:25:14,030 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/challenge] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-17 12:25:14,031 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-17 12:25:14,039 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-09-17 12:25:14,093 [http-nio-8080-exec-1] INFO  c.n.c.controller.UserController - Inside find all users...
+2020-09-17 13:48:46,935 [http-nio-8080-exec-3] INFO  c.n.c.controller.UserController - Inside find all users...
+2020-09-17 13:48:49,200 [http-nio-8080-exec-4] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 13:48:49,313 [http-nio-8080-exec-5] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 14:45:31,446 [http-nio-8080-exec-7] INFO  c.n.c.controller.UserController - Inside find all users...
+2020-09-17 14:45:32,522 [http-nio-8080-exec-8] INFO  c.n.c.controller.UserController - Inside find all users...
+2020-09-17 14:45:33,613 [http-nio-8080-exec-9] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 14:45:33,643 [http-nio-8080-exec-10] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 14:47:27,918 [http-nio-8080-exec-2] INFO  c.n.c.controller.UserController - Inside find all users...
+2020-09-17 14:47:28,030 [http-nio-8080-exec-3] INFO  c.n.c.controller.UserController - Inside find all users...
+2020-09-17 14:47:33,953 [http-nio-8080-exec-4] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 14:47:33,993 [http-nio-8080-exec-5] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 14:47:36,642 [http-nio-8080-exec-8] INFO  c.n.c.controller.UserController - Calling modify enroleetrue
+2020-09-17 14:48:04,038 [http-nio-8080-exec-1] INFO  c.n.c.controller.UserController - Calling modify enroleetrue
+2020-09-17 14:48:09,776 [http-nio-8080-exec-3] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 14:48:09,790 [http-nio-8080-exec-4] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 14:48:10,649 [http-nio-8080-exec-5] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 14:48:10,658 [http-nio-8080-exec-6] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 14:48:11,377 [http-nio-8080-exec-7] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 14:48:11,392 [http-nio-8080-exec-8] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 14:48:12,969 [http-nio-8080-exec-9] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 14:48:12,979 [http-nio-8080-exec-10] INFO  c.n.c.controller.UserController - Inside findByUserId...100
+2020-09-17 14:48:14,968 [http-nio-8080-exec-2] INFO  c.n.c.controller.UserController - Inside find all users...

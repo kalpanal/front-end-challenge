@@ -11,11 +11,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.nttdata.challenge.model.User;
 import com.nttdata.challenge.repository.UserRepository;
 import com.nttdata.challenge.service.UserServiceImpl;
 
@@ -56,11 +59,24 @@ public class UserController {
 			logger.info("Inside findByUserId..."+userId);
 			return new ResponseEntity<>(userServiceImpl.getUserById(userId),
 					HttpStatus.OK);
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 			return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 
+	}
+	
+	@PostMapping(value = "/updateByUserId")
+	public @ResponseBody ResponseEntity modifyApplication(@RequestBody User user) {
+		logger.info("Calling modify enrolee"+user.getActivationstatus());
+		try {		
+			
+			return new ResponseEntity<>(userServiceImpl.updateUser(user), HttpStatus.OK);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 	}
 
 
