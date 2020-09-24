@@ -1,4 +1,4 @@
-# Fullstack-challenge
+# Front End-challenge
 
 This project consists of two parts
 
