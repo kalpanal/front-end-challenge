@@ -15,22 +15,22 @@ export class EmployeeService {
     private apiURL: string;
 
     constructor(private http: HttpClient) {
-        this.apiURL = 'http://localhost:8080/challenge/api/v1/';
+        this.apiURL = environment.apiUrl;
     }
 
     public getEmployeeList() {
-        return this.http.get<Employee[]>(this.apiURL + 'findAllUsers');
+        return this.http.get<Employee[]>(this.apiURL + 'enrollees');
     }
 
     public getEmployeeDetails(employee) {
-        const data = this.http.get<Employee>(this.apiURL + 'findByUserId', { params: { userId: employee.userId } });
-        
+        const data = this.http.get<Employee>(this.apiURL + 'enrollees/'+  employee.id  );
+        console.log(data);
         this._empDetailSubject$.next(data);
     }
 
     public saveEmployeeDetails(enroleeData) {
-        console.log('enroleeData' + this.apiURL + 'updateByUserId' + JSON.stringify(enroleeData));
-        this.http.post(this.apiURL + 'updateByUserId', enroleeData).subscribe(response => { console.log(response); }) ;
+        console.log('enroleeData' + this.apiURL + 'enrollees' + JSON.stringify(enroleeData));
+        return this.http.put(this.apiURL + 'enrollees/' + enroleeData.id, enroleeData);
     }
 
 }

@@ -1,6 +1,6 @@
 export interface Employee {
-    userId: string;
+    id: string;
     name: string;
-    activationstatus: string;
-    birthdate: string;
+    active: boolean;
+    dateOfBirth: string;
 }

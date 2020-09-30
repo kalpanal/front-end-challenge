@@ -1,12 +1,13 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9ff53e1b-967a-4a9b-bab8-fd75122dda43/deploy-status)](https://app.netlify.com/sites/employees-list/deploys)
 
-# Employee List
+# Enrollee List
 
 This is a RxJS `BehaviorSubject` example in an Angular project.
 
-[See it in action](https://employees-list.netlify.app/)!
+Feature 1: The enrolee table is showing all enrolees, each one of them has an edit icon which is clickable to show their details.
 
-The employees table is showing many emplyees, each one of them is clickable to show their details.
+Feature 2: On click of edit icon, the edit enrolee form open, where in only activation status and name are editable, and click submit to save, which calls deno service PUT /enrollees/{id}
+
+Feature 3: On click of edit icon, deno service GET /enrollees/{id} is called to get the details of the selected enrollee
 
 ---
 

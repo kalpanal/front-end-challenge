@@ -4,6 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeeRoutingModule } from './employee-routing.module';
 import { EmployeesPageComponent } from './pages/employees-page';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {
     EmployeeListComponent,
@@ -21,7 +23,9 @@ import {
         HttpClientModule,
         EmployeeRoutingModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        NgbModule,
+        BrowserAnimationsModule
     ]
 })
 export class EmployeeModule { }

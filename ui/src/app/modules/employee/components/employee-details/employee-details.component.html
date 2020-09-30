@@ -1,5 +1,8 @@
 <div *ngIf="employeeDetail | async as employee">
     <h3>Enrolee Detail</h3>
+    <ngb-alert [@fadeInOut] *ngIf="successMessage" [dismissible]="false" type="success">
+        <div>{{ successMessage }}</div>
+    </ngb-alert>
     <div id="FormWrapper">
         <div id="FormbodyWrapper">
             <!-- Form Starts here -->
@@ -9,7 +12,7 @@
                         UserId
                     </label>
                     <div class="form-group row col-md-6">
-                        <input type="text" class="form-control" [attr.disabled]="true" formControlName="userId">{{employee.userId}}
+                        <input type="text" class="form-control" [attr.disabled]="true" formControlName="id">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -18,7 +21,7 @@
                     </label>
                     <div class="col-md-6">
                         <input type="text" class="form-control" formControlName="name"
-                               value={{employee.name}}/>
+                               value={{employee.name}} />
                         <div *ngIf="(!CreateForm.controls.name.pristine && !CreateForm.controls.name.valid) ||
                       (isSubmitted && !CreateForm.controls.name.valid)
                       " class="help-block">
@@ -31,13 +34,23 @@
                         Activation Status
                     </label>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" formControlName="activationstatus"
-                               value={{employee.activationstatus}}/>
-                        <div *ngIf="(!CreateForm.controls.activationstatus.pristine && !CreateForm.controls.activationstatus.valid) ||
-                      (isSubmitted && !CreateForm.controls.activationstatus.valid)
-                      " class="help-block">
-                            {{this.commonService.applicationNameRequired}}
+                        <div class="form-check-inline">
+                            <input type="radio" name="active" class="form-check-input" id="inlineRadio1"
+                                   (change)="radioChange($event.target,'active')" value="true"
+                                   [checked]=activeFlag>
+                            <label for="inlineRadio1" class="form-check-label">
+                                Active
+                            </label>
                         </div>
+                        <div class="form-check-inline">
+                            <input type="radio" name="inactive" class="form-check-input" id="inlineRadio2"
+                                   (change)="radioChange($event.target,'inactive')" value="false"
+                                   [checked]=inactiveFlag>
+                            <label for="inlineRadio2" class="form-check-label">
+                                Inactive
+                            </label>
+                        </div>
+
                     </div>
                 </div>
                 <div class="form-group row">
@@ -45,8 +58,8 @@
                         Birth Date
                     </label>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" [attr.disabled]="true" formControlName="birthdate"
-                               value={{employee.birthdate}}/>                       
+                        <input type="text" class="form-control" [attr.disabled]="true" formControlName="dateOfBirth"
+                               value={{employee.dateOfBirth}} />
                     </div>
                 </div>
                 <br />
@@ -54,6 +67,6 @@
                 <input type="submit" value="submit">
             </form>
         </div>
-        </div>
-
     </div>
+
+</div>

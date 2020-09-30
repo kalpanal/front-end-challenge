@@ -11,6 +11,7 @@ export class Common {
     // *** Standardisation of success/error messages *** //
     // *** global messages *** //
     globalErrorMsg = 'Something went wrong';
+    globalSuccessMsg = 'Updated Successfully';
    
     windowscroll() {
         window.scroll({ top: 0, left: 0, behavior: 'smooth' });
