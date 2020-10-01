@@ -1,0 +1,1543 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>employees-list documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">employees-list documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>EmployeeDetailsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/modules/employee/components/employee-details/employee-details.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-employee-details</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./employee-details.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./employee-details.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#activeFlag">activeFlag</a>
+                            </li>
+                            <li>
+                                <a href="#activeFlagTemplate">activeFlagTemplate</a>
+                            </li>
+                            <li>
+                                <a href="#allFactors">allFactors</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#commonService">commonService</a>
+                            </li>
+                            <li>
+                                <a href="#CreateForm">CreateForm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#employeeDetail">employeeDetail</a>
+                            </li>
+                            <li>
+                                <a href="#errorMessage">errorMessage</a>
+                            </li>
+                            <li>
+                                <a href="#inactiveFlag">inactiveFlag</a>
+                            </li>
+                            <li>
+                                <a href="#isSubmitted">isSubmitted</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#Success">Success</a>
+                            </li>
+                            <li>
+                                <a href="#successMessage">successMessage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#updatedEmployee">updatedEmployee</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#destroyFormValues">destroyFormValues</a>
+                            </li>
+                            <li>
+                                <a href="#editApplication">editApplication</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onClickSubmit">onClickSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit">onSubmit</a>
+                            </li>
+                            <li>
+                                <a href="#radioChange">radioChange</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(employeeService: <a href="../injectables/EmployeeService.html">EmployeeService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, commonService: <a href="../injectables/Common.html">Common</a>, formBuilder: <a href="https://angular.io/api/forms/FormBuilder" target="_blank">FormBuilder</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>employeeService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/EmployeeService.html" target="_self" >EmployeeService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Common.html" target="_self" >Common</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formBuilder</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/forms/FormBuilder" target="_blank" >FormBuilder</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="destroyFormValues"></a>
+                    <span class="name">
+                        <b>
+                            destroyFormValues
+                        </b>
+                        <a href="#destroyFormValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>destroyFormValues()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="136"
+                            class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:136</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editApplication"></a>
+                    <span class="name">
+                        <b>
+                            editApplication
+                        </b>
+                        <a href="#editApplication"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>editApplication()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onClickSubmit"></a>
+                    <span class="name">
+                        <b>
+                            onClickSubmit
+                        </b>
+                        <a href="#onClickSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onClickSubmit(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <b>
+                            onSubmit
+                        </b>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="radioChange"></a>
+                    <span class="name">
+                        <b>
+                            radioChange
+                        </b>
+                        <a href="#radioChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>radioChange(target, name)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:88</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>target</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="activeFlag"></a>
+                        <span class="name">
+                            <b>
+                            activeFlag</b>
+                            <a href="#activeFlag"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="activeFlagTemplate"></a>
+                        <span class="name">
+                            <b>
+                            activeFlagTemplate</b>
+                            <a href="#activeFlagTemplate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="allFactors"></a>
+                        <span class="name">
+                            <b>
+                            allFactors</b>
+                            <a href="#allFactors"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="commonService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            commonService</b>
+                            <a href="#commonService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/Common.html" target="_self" >Common</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="CreateForm"></a>
+                        <span class="name">
+                            <b>
+                            CreateForm</b>
+                            <a href="#CreateForm"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormGroup" target="_blank" >FormGroup</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="employeeDetail"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            employeeDetail</b>
+                            <a href="#employeeDetail"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Employee.html" target="_self" >Employee</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errorMessage"></a>
+                        <span class="name">
+                            <b>
+                            errorMessage</b>
+                            <a href="#errorMessage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="inactiveFlag"></a>
+                        <span class="name">
+                            <b>
+                            inactiveFlag</b>
+                            <a href="#inactiveFlag"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isSubmitted"></a>
+                        <span class="name">
+                            <b>
+                            isSubmitted</b>
+                            <a href="#isSubmitted"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Success"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            Success</b>
+                            <a href="#Success"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Subject&lt;string&gt;()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="successMessage"></a>
+                        <span class="name">
+                            <b>
+                            successMessage</b>
+                            <a href="#successMessage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updatedEmployee"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            updatedEmployee</b>
+                            <a href="#updatedEmployee"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Employee.html" target="_self" >Employee</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/modules/employee/components/employee-details/employee-details.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, HostListener, ElementRef  } from &#x27;@angular/core&#x27;;
+import { EmployeeService } from &#x27;../../services/employee&#x27;;
+import { Employee } from &#x27;../../interfaces/employee.interfaces&#x27;;
+import { FormGroup, FormBuilder, Validators, FormControl} from &#x27;@angular/forms&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { Subject, Subscription } from &#x27;rxjs&#x27;;
+import { Common } from &#x27;../../../../Common&#x27;;
+import { debounceTime } from &#x27;rxjs/operators&#x27;;
+import { trigger, state, style, animate, transition } from &#x27;@angular/animations&#x27;;
+
+@Component({
+    selector: &#x27;app-employee-details&#x27;,
+    templateUrl: &#x27;./employee-details.component.html&#x27;,
+    styleUrls: [&#x27;./employee-details.component.scss&#x27;],
+    animations: [
+        trigger(&#x27;fadeInOut&#x27;, [
+            state(&#x27;void&#x27;, style({
+                opacity: 0
+            })),
+            transition(&#x27;void &lt;&#x3D;&gt; *&#x27;, animate(1000)),
+        ]),
+    ]
+})
+
+
+export class EmployeeDetailsComponent implements OnInit {
+    public employeeDetail: Employee;
+    allFactors: any &#x3D; [];
+    isSubmitted &#x3D; false;
+    public updatedEmployee: Employee;   
+    CreateForm: FormGroup;
+    constructor(private employeeService: EmployeeService,        
+        private router: Router,
+        public commonService: Common,
+        private formBuilder: FormBuilder
+      ) {
+             
+        
+    }
+   
+    successMessage &#x3D; &#x27;&#x27;;
+    private Success &#x3D; new Subject&lt;string&gt;();
+    errorMessage &#x3D; &#x27;&#x27;;
+    activeFlag: boolean;
+    inactiveFlag: boolean;
+    activeFlagTemplate &#x3D; &#x27;&#x27;;
+
+    public ngOnInit() {
+        this.CreateForm &#x3D; new FormGroup({
+            id: new FormControl(&#x27;&#x27;),
+            name: new FormControl(&#x27;&#x27;),
+            active: new FormControl(),
+            inactive: new FormControl(),
+            dateOfBirth: new FormControl(&#x27;&#x27;)
+        });
+
+        // *** Success message on edit of application *** //
+        this.Success.subscribe((message) &#x3D;&gt; this.successMessage &#x3D;
+            message);
+        this.Success.pipe(
+            debounceTime(2000)
+        ).subscribe(() &#x3D;&gt; this.successMessage &#x3D; null);
+        this.employeeService.empDetailSubject$.subscribe(response &#x3D;&gt; {
+            this.employeeDetail &#x3D; response;
+            if (response !&#x3D; null) {
+               console.log(&#x27;getValue will get the next value:&#x27;, this.employeeService.empDetailSubject$.getValue());
+               
+                response.forEach(e &#x3D;&gt; {
+                    this.CreateForm.controls[&#x27;id&#x27;].setValue(e.id);
+                    this.CreateForm.controls[&#x27;name&#x27;].setValue(e.name);
+                    if (e.active) {
+                        this.activeFlag &#x3D; true;
+                        this.inactiveFlag &#x3D; false;
+                    } else {
+                        this.activeFlag &#x3D; false;
+                        this.inactiveFlag &#x3D; true;
+                    }
+                   this.CreateForm.controls[&#x27;dateOfBirth&#x27;].setValue(e.dateOfBirth);
+                });
+              
+            }
+        });
+
+        this.destroyFormValues();
+       
+    }
+    // ** Radio button functionality ** //
+    radioChange(target, name) {       
+        if (name &#x3D;&#x3D;&#x3D; &#x27;active&#x27; &amp;&amp; target.checked) {
+            console.log(&#x27;radio change&#x27;);
+            this.activeFlag &#x3D; true;
+            this.inactiveFlag &#x3D; false;
+        } 
+        if (name &#x3D;&#x3D;&#x3D; &#x27;inactive&#x27; &amp;&amp; target.checked) {
+            console.log(&#x27;radio change&#x27;);
+            this.activeFlag &#x3D; false;
+            this.inactiveFlag &#x3D; true;
+        } 
+    }
+    editApplication() {
+        alert(&#x27;Hi&#x27;);
+        console.log(this.CreateForm.value);       
+    }
+    onSubmit() {       
+        console.log(this.CreateForm.value);
+        // stop here if form is invalid
+        if (this.CreateForm.invalid) {
+            return;
+        }
+        alert(&#x27;SUCCESS!! :-)&#x27;)
+    }
+
+    onClickSubmit(data) {       
+       // this.employee &#x3D; this.employeeDetail;
+        var updatedEmployee &#x3D; {} as Employee
+        updatedEmployee.id &#x3D; data.id;
+        updatedEmployee.name &#x3D; data.name;
+        if (this.activeFlag) {
+            updatedEmployee.active &#x3D; true;
+        } else if (this.inactiveFlag){
+            updatedEmployee.active &#x3D; false;
+        }
+        updatedEmployee.dateOfBirth &#x3D; data.dateOfBirth;           
+        this.employeeService.saveEmployeeDetails(updatedEmployee).subscribe((data: any) &#x3D;&gt; {
+            this.Success.next(this.commonService.globalSuccessMsg);
+            this.commonService.windowscroll();
+            this.router.navigate([&#x27;/employee-portal&#x27;]);
+            setTimeout(() &#x3D;&gt; {
+                this.router.navigate([&#x27;/employee-portal&#x27;]);
+            }, 1000);
+        }, (error) &#x3D;&gt; {
+            this.errorMessage &#x3D; this.commonService.globalErrorMsg;
+        });
+     }
+    // *** To destroy the form values after creation of Application *** //
+    destroyFormValues() {
+        this.commonService.destroyform();
+    }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;employeeDetail | async as employee&quot;&gt;
+    &lt;h3&gt;Enrolee Detail&lt;/h3&gt;
+    &lt;ngb-alert [@fadeInOut] *ngIf&#x3D;&quot;successMessage&quot; [dismissible]&#x3D;&quot;false&quot; type&#x3D;&quot;success&quot;&gt;
+        &lt;div&gt;{{ successMessage }}&lt;/div&gt;
+    &lt;/ngb-alert&gt;
+    &lt;div id&#x3D;&quot;FormWrapper&quot;&gt;
+        &lt;div id&#x3D;&quot;FormbodyWrapper&quot;&gt;
+            &lt;!-- Form Starts here --&gt;
+            &lt;form [formGroup]&#x3D;&quot;CreateForm&quot; (ngSubmit)&#x3D;&quot;onClickSubmit(CreateForm.value)&quot;&gt;
+                &lt;div class&#x3D;&quot;form-group row&quot;&gt;
+                    &lt;label class&#x3D;&quot;col-md-4 col-form-label&quot;&gt;
+                        UserId
+                    &lt;/label&gt;
+                    &lt;div class&#x3D;&quot;form-group row col-md-6&quot;&gt;
+                        &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; [attr.disabled]&#x3D;&quot;true&quot; formControlName&#x3D;&quot;id&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;form-group row&quot;&gt;
+                    &lt;label class&#x3D;&quot;col-md-4 col-form-label&quot;&gt;
+                        Name
+                    &lt;/label&gt;
+                    &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                        &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; formControlName&#x3D;&quot;name&quot;
+                               value&#x3D;{{employee.name}} /&gt;
+                        &lt;div *ngIf&#x3D;&quot;(!CreateForm.controls.name.pristine &amp;&amp; !CreateForm.controls.name.valid) ||
+                      (isSubmitted &amp;&amp; !CreateForm.controls.name.valid)
+                      &quot; class&#x3D;&quot;help-block&quot;&gt;
+                            {{this.commonService.applicationNameRequired}}
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;form-group row&quot;&gt;
+                    &lt;label class&#x3D;&quot;col-md-4 col-form-label&quot;&gt;
+                        Activation Status
+                    &lt;/label&gt;
+                    &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                        &lt;div class&#x3D;&quot;form-check-inline&quot;&gt;
+                            &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;active&quot; class&#x3D;&quot;form-check-input&quot; id&#x3D;&quot;inlineRadio1&quot;
+                                   (change)&#x3D;&quot;radioChange($event.target,&#x27;active&#x27;)&quot; value&#x3D;&quot;true&quot;
+                                   [checked]&#x3D;activeFlag&gt;
+                            &lt;label for&#x3D;&quot;inlineRadio1&quot; class&#x3D;&quot;form-check-label&quot;&gt;
+                                Active
+                            &lt;/label&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;form-check-inline&quot;&gt;
+                            &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;inactive&quot; class&#x3D;&quot;form-check-input&quot; id&#x3D;&quot;inlineRadio2&quot;
+                                   (change)&#x3D;&quot;radioChange($event.target,&#x27;inactive&#x27;)&quot; value&#x3D;&quot;false&quot;
+                                   [checked]&#x3D;inactiveFlag&gt;
+                            &lt;label for&#x3D;&quot;inlineRadio2&quot; class&#x3D;&quot;form-check-label&quot;&gt;
+                                Inactive
+                            &lt;/label&gt;
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;form-group row&quot;&gt;
+                    &lt;label class&#x3D;&quot;col-md-4 col-form-label&quot;&gt;
+                        Birth Date
+                    &lt;/label&gt;
+                    &lt;div class&#x3D;&quot;col-md-6&quot;&gt;
+                        &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; [attr.disabled]&#x3D;&quot;true&quot; formControlName&#x3D;&quot;dateOfBirth&quot;
+                               value&#x3D;{{employee.dateOfBirth}} /&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;br /&gt;
+
+                &lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;submit&quot;&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./employee-details.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../../../assets/common-mixins/mixins&#x27;;
+
+    #FormWrapper {
+        margin-bottom: #{$f1 + 10};
+        background-color: $white-color;
+        padding: 20px 0 30px 25px;
+
+        .titlediv {
+            margin-bottom: 30px;
+
+            .main-title {
+                text-transform: capitalize;
+                color: $grey-color;
+                margin-bottom: #{$f1 - 15};
+                font: 800 33px $global-font-dark-black;
+            }
+
+            .title-description {
+                p {
+                    font: 300 #{$f1 - 2}/140% $global-basic-font;
+                    color: $grey-color;
+                    margin: 0;
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    #FormbodyWrapper {
+        .form-group {
+            margin: 0 0 #{$f1 - 5};
+
+            label {
+                font: 400 #{$f1 - 2} $global-basic-font;
+            }
+
+            select {
+                width: 75%;
+                background-color: $input-bg-color;
+            }
+
+            .form-control {
+                width: 75%;
+                background-color: $input-bg-color;
+                color: $black-color;
+                border-color: $input-bg-color;
+
+                &amp;:focus {
+                    border-color: $input-bg-color;
+                }
+            }
+
+            .form-check-inline {
+                margin-bottom: #{$f1 - 5};
+
+                label {
+                    padding: 0;
+                    position: relative;
+                    font-size: #{$f1 - 5};
+                    cursor: pointer;
+
+                    &amp;:before {
+                        content: &#x27;&#x27;;
+                        border: 2px solid $gray-solid-border-color;
+                        background: $gray-light-bg-color;
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        vertical-align: middle;
+                    }
+
+                    &amp;:after {
+                        content: &#x27;&#x27;;
+                        display: inline-block;
+                        position: absolute;
+                        width: 7px;
+                        height: 7px;
+                        background: $blue-bg-color;
+                        left: 8px;
+                        top: 8px;
+                        border-radius: 50%;
+                        transition: 300ms ease-in-out 0s;
+                        transform: translate(-56%, -5%) scale(0);
+                    }
+                }
+
+                input[type&#x3D;&quot;radio&quot;] {
+                    display: none;
+
+                    &amp;:checked {
+                        + label {
+                            &amp;:before {
+                                border: 2px solid $blue-bg-color;
+                                background: $white-color;
+                                color: $black-color;
+                            }
+
+                            &amp;:after {
+                                transform: translate(-56%, 13%) scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .help-block {
+                margin-top: 4px;
+            }
+        }
+    }
+
+    #SubmitWrapper {
+        @include submitwrapper;
+    }
+
+    .alert-success, .alert-danger {
+        width: 100%;
+    }
+
+
+#CreateApplicationBlueprintWrapper {
+    #FormWrapper {
+        margin-bottom: 30px;
+        background-color: $white-color;
+        padding: 20px 0 30px 25px;
+
+        .titlediv {
+            margin-bottom: 30px;
+
+            .main-title {
+                text-transform: capitalize;
+                color: $grey-color;
+                margin-bottom: 5px;
+                font: 800 33px $global-font-dark-black;
+            }
+
+            .title-description {
+                p {
+                    font: 300 #{$f1 - 2}/140% $global-basic-font;
+                    color: $grey-color;
+                    margin: 0;
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    #FormbodyWrapper {
+        .form-group {
+            margin: 0 0 #{$f1 - 5};
+
+            label {
+                font: 400 #{$f1 - 2} $global-basic-font;
+            }
+
+            select {
+                width: 75%;
+                background-color: $input-bg-color;
+            }
+
+            .form-control {
+                width: 75%;
+                background-color: $input-bg-color;
+                color: $black-color;
+                border-color: $input-bg-color;
+
+                &amp;:focus {
+                    border-color: $input-bg-color;
+                }
+            }
+
+            .form-check-inline {
+                margin-bottom: 15px;
+
+                label {
+                    padding: 0;
+                    position: relative;
+                    font-size: #{$f1 - 5};
+                    cursor: pointer;
+
+                    &amp;:before {
+                        content: &#x27;&#x27;;
+                        border: 2px solid $gray-solid-border-color;
+                        background: $gray-light-bg-color;
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        vertical-align: middle;
+                    }
+
+                    &amp;:after {
+                        content: &#x27;&#x27;;
+                        display: inline-block;
+                        position: absolute;
+                        width: 7px;
+                        height: 7px;
+                        background: $blue-bg-color;
+                        left: 8px;
+                        top: 8px;
+                        border-radius: 50%;
+                        transition: 300ms ease-in-out 0s;
+                        transform: translate(-56%, -5%) scale(0);
+                    }
+                }
+
+                input[type&#x3D;&quot;radio&quot;] {
+                    display: none;
+
+                    &amp;:checked {
+                        + label {
+                            &amp;:before {
+                                border: 2px solid $blue-bg-color;
+                                background: $white-color;
+                                color: $black-color;
+                            }
+
+                            &amp;:after {
+                                transform: translate(-56%, 13%) scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .help-block {
+                margin-top: 4px;
+            }
+        }
+    }
+
+    #SubmitWrapper {
+        @include submitwrapper;
+    }
+
+    #CreateApplicationBlueprint-create-download-btn {
+        @include submitwrapper;
+    }
+
+    #CreateApplicationBlueprint-upload-btn {
+        @include submitwrapper;
+    }
+
+    #CreateApplicationBlueprint-upload-btn {
+        @include submitwrapper;
+    }
+
+    #CreateApplicationBlueprint-back-btn {
+        @include submitwrapper;
+    }
+
+    .alert-success, .alert-danger {
+        width: 100%;
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="employeeDetail | async as employee">    <h3>Enrolee Detail</h3>    <ngb-alert [@fadeInOut] *ngIf="successMessage" [dismissible]="false" type="success">        <div>{{ successMessage }}</div>    </ngb-alert>    <div id="FormWrapper">        <div id="FormbodyWrapper">            <!-- Form Starts here -->            <form [formGroup]="CreateForm" (ngSubmit)="onClickSubmit(CreateForm.value)">                <div class="form-group row">                    <label class="col-md-4 col-form-label">                        UserId                    </label>                    <div class="form-group row col-md-6">                        <input type="text" class="form-control" [attr.disabled]="true" formControlName="id">                    </div>                </div>                <div class="form-group row">                    <label class="col-md-4 col-form-label">                        Name                    </label>                    <div class="col-md-6">                        <input type="text" class="form-control" formControlName="name"                               value={{employee.name}} />                        <div *ngIf="(!CreateForm.controls.name.pristine && !CreateForm.controls.name.valid) ||                      (isSubmitted && !CreateForm.controls.name.valid)                      " class="help-block">                            {{this.commonService.applicationNameRequired}}                        </div>                    </div>                </div>                <div class="form-group row">                    <label class="col-md-4 col-form-label">                        Activation Status                    </label>                    <div class="col-md-6">                        <div class="form-check-inline">                            <input type="radio" name="active" class="form-check-input" id="inlineRadio1"                                   (change)="radioChange($event.target,\'active\')" value="true"                                   [checked]=activeFlag>                            <label for="inlineRadio1" class="form-check-label">                                Active                            </label>                        </div>                        <div class="form-check-inline">                            <input type="radio" name="inactive" class="form-check-input" id="inlineRadio2"                                   (change)="radioChange($event.target,\'inactive\')" value="false"                                   [checked]=inactiveFlag>                            <label for="inlineRadio2" class="form-check-label">                                Inactive                            </label>                        </div>                    </div>                </div>                <div class="form-group row">                    <label class="col-md-4 col-form-label">                        Birth Date                    </label>                    <div class="col-md-6">                        <input type="text" class="form-control" [attr.disabled]="true" formControlName="dateOfBirth"                               value={{employee.dateOfBirth}} />                    </div>                </div>                <br />                <input type="submit" value="submit">            </form>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'EmployeeDetailsComponent', 'selector': 'app-employee-details'},{'name': 'EmployeeListComponent', 'selector': 'app-employee-list'},{'name': 'EmployeesPageComponent', 'selector': 'app-employees-page'},{'name': 'NameEditorComponent', 'selector': 'app-name-editor'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'EmployeeDetailsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'EmployeeDetailsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
