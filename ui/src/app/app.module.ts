@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { EmployeeModule } from './modules/employee/employee.module';
 import { Common } from './Common';
 
+import { AppMaterialModules } from './material';
+
 @NgModule({
     declarations: [
         AppComponent
@@ -16,7 +18,8 @@ import { Common } from './Common';
         ReactiveFormsModule,
         HttpClientModule,
         AppRoutingModule,
-        EmployeeModule
+        EmployeeModule,
+        AppMaterialModules
     ], providers: [
         Common
     ],

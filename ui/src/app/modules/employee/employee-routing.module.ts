@@ -21,13 +21,7 @@ const routes: Routes = [
         children: [
             {
                 path: 'list',
-                component: EmployeeListComponent,
-                children: [
-                    {
-                        path: 'details',
-                        component: EmployeeDetailsComponent
-                    }
-                ]
+                component: EmployeeListComponent
             }
         ]
     },

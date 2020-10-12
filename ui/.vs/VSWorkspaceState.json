@@ -5,12 +5,12 @@
     "\\src\\app",
     "\\src\\app\\modules",
     "\\src\\app\\modules\\employee",
+    "\\src\\app\\modules\\employee\\components",
     "\\src\\app\\modules\\employee\\interfaces",
+    "\\src\\app\\modules\\employee\\pages",
     "\\src\\app\\modules\\employee\\services",
-    "\\src\\app\\modules\\employee\\services\\employee",
-    "\\src\\assets",
-    "\\src\\assets\\common-mixins"
+    "\\src\\app\\modules\\employee\\services\\employee"
   ],
-  "SelectedNode": "\\src\\app\\modules\\employee\\services\\employee\\employee.service.ts",
+  "SelectedNode": "\\src\\app\\modules\\employee\\employee-routing.module.ts",
   "PreviewInSolutionExplorer": false
 }

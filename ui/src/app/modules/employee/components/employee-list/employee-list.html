@@ -1,0 +1,40 @@
+
+
+<div class="container text-center">
+    <mat-table [dataSource]="dataSource" class="mat-table" matSort>
+        <!-- Name Column -->
+        <ng-container matColumnDef="edit">
+            <mat-header-cell *matHeaderCellDef></mat-header-cell>
+            <mat-cell *matCellDef="let element">
+                <button mat-icon-button (click)="onEdit(element)">
+                    <mat-icon>create</mat-icon>
+                </button>
+            </mat-cell>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="id">
+            <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+        </ng-container>
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+        </ng-container>
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="active">
+            <mat-header-cell *matHeaderCellDef> Activation Status </mat-header-cell>
+            <mat-cell *matCellDef="let element">
+               {{element.active}}</mat-cell>
+</ng-container>
+        <ng-container matColumnDef="dateOfBirth">
+            <mat-header-cell *matHeaderCellDef> Date of Birth </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.dateOfBirth}} </mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+
+</div>
+<mat-paginator class="mat-table" [pageSizeOptions]="[5, 10, 15, 20, 25, dataSource.data.length]" showFirstLastButtons></mat-paginator>

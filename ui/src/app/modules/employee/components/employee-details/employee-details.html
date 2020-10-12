@@ -1,0 +1,52 @@
+<!-- Form Starts here -->
+<!-- <form [formGroup]="CreateForm" (ngSubmit)="onClickSubmit(CreateForm.value)"> -->
+    <form class= "container" [formGroup]="CreateForm" (ngSubmit)="submit" #formControl="ngForm">
+      
+            <div class="form">
+                <label class="col-form-label">
+                    UserId
+                </label>
+                <div class="form-div">
+                    <input class="form-control" [attr.disabled]="true" formControlName="id">
+                </div>
+            </div>
+
+
+            <div class="form">
+                <label class="col-form-label">
+                    Name
+                </label>
+                <div class="form-div">
+                    <input class="form-control" matInput formControlName="name">
+
+                </div>
+            </div>
+
+
+            <div class="form">
+                <label class="col-form-label">
+                    Activation Status
+                </label>
+                <div class="form-div">
+                    <select formControlName="active">
+                        <option [value]="true">Active</option>
+                        <option [value]="false">Inactive</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form">
+                <label class="col-form-label">
+                    Date of Birth
+                </label>
+                <div class="form-div">
+                    <input class="form-control" [attr.disabled]="true" formControlName="dateOfBirth">
+                </div>
+            </div>
+
+            <div mat-dialog-actions>
+                <button class="save-btn" mat-button [type]="submit" [mat-dialog-close]="1" (click)="save()">Save</button>
+                <button mat-button (click)="onNoClick()" tabindex="-1">Cancel</button>
+            </div>
+    </form>
