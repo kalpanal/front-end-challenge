@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
 import { Employee } from '../../interfaces/employee';
 import { EmployeeService } from '../../services/employee';
 import { EmployeeDetailsComponent } from '../employee-details/employee-details';
+import { Pipe, PipeTransform } from '@angular/core';
+import { DatePipe } from '@angular/common';
 
 @Component({
     selector: 'app-employee-list',
@@ -20,7 +22,8 @@ export class EmployeeListComponent implements AfterViewInit {
     dataSource: MatTableDataSource<Employee>;
 
     constructor(private employeeService: EmployeeService,
-        private router: Router, public dialog: MatDialog) {
+        private router: Router, public dialog: MatDialog,
+        public datePipe: DatePipe) {
 
     }
     @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -36,21 +39,34 @@ export class EmployeeListComponent implements AfterViewInit {
 
     onEdit(employee: Employee) {
         const dialogConfig = new MatDialogConfig();
+        const birthDate = this.datePipe.transform(employee.dateOfBirth, 'MM-dd-yyyy');
         dialogConfig.data = {
-            id: employee.id, name: employee.name, active: employee.active, dateOfBirth: employee.dateOfBirth
+            id: employee.id, name: employee.name, active: employee.active, dateOfBirth: birthDate
         };
 
         const dialogRef = this.dialog.open(EmployeeDetailsComponent, dialogConfig);
         dialogRef.afterClosed().subscribe(
             data => {
                 console.log("Dialog output:", data)
-                employee.id = data.id;
-                employee.name = data.name
+               // employee.id = data.id;
+                employee.name = data.name;
+                employee.active = data.active;
                 this.empListData.push(employee);
 
             }
         );
 
+    }
+}
+
+@Pipe({
+    name: 'customDateFormat',
+})
+export class customDateFormatPipe implements PipeTransform {
+    transform(value: string) {
+        var datePipe = new DatePipe("en-US");
+        value = datePipe.transform(value, 'dd-mm-yyyy');
+        return value;
     }
 }
 

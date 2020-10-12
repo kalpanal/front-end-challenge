@@ -6,11 +6,10 @@
     "\\src\\app\\modules",
     "\\src\\app\\modules\\employee",
     "\\src\\app\\modules\\employee\\components",
+    "\\src\\app\\modules\\employee\\components\\employee-list",
     "\\src\\app\\modules\\employee\\interfaces",
     "\\src\\app\\modules\\employee\\pages",
-    "\\src\\app\\modules\\employee\\services",
-    "\\src\\app\\modules\\employee\\services\\employee"
+    "\\src\\app\\modules\\employee\\pages\\employees-page"
   ],
-  "SelectedNode": "\\src\\app\\modules\\employee\\employee-routing.module.ts",
   "PreviewInSolutionExplorer": false
 }

@@ -4,6 +4,8 @@ import { Employee } from '../../interfaces/employee';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Common } from '../../../../Common';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { DatePipe } from '@angular/common';
+
 
 @Component({
     selector: 'app-employee-details',
@@ -26,6 +28,7 @@ export class EmployeeDetailsComponent implements OnInit {
         public commonService: Common,
         private formBuilder: FormBuilder,
         public dialogRef: MatDialogRef<EmployeeDetailsComponent>,
+        public datePipe: DatePipe,
         @Inject(MAT_DIALOG_DATA) { id, name, active, dateOfBirth }: Employee
     ) {
         this.id = id;
@@ -60,7 +63,8 @@ export class EmployeeDetailsComponent implements OnInit {
         } else {
             updatedEmployee.active = false;
         }
-        updatedEmployee.dateOfBirth = this.CreateForm.value.dateOfBirth;
+     
+        updatedEmployee.dateOfBirth = this.datePipe.transform(this.CreateForm.value.dateOfBirth, 'MM-dd-yyyy');
         this.employeeService.saveEmployeeDetails(updatedEmployee).subscribe(data => {
             this.CreateForm.reset();
         });

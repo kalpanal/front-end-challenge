@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeModule } from './modules/employee/employee.module';
 import { Common } from './Common';
+import { DatePipe } from '@angular/common';
 
 import { AppMaterialModules } from './material';
 
@@ -21,7 +22,8 @@ import { AppMaterialModules } from './material';
         EmployeeModule,
         AppMaterialModules
     ], providers: [
-        Common
+        Common,
+        DatePipe
     ],
     bootstrap: [AppComponent]
 })
